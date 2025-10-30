@@ -615,21 +615,40 @@ hr {
   footer .grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-    text-align: center;
+    text-align: left;
   }
   footer .grid > div:first-child {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   footer .grid > div:first-child .row {
-    justify-content: center;
+    justify-content: flex-start;
+  }
+  .section.dark .grid.grid-2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .section.dark .grid.grid-2 .card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .section.dark .grid.grid-2 .card input,
+  .section.dark .grid.grid-2 .card select,
+  .section.dark .grid.grid-2 .card textarea {
+    margin-bottom: 0.5rem;
+  }
+  .section.dark .grid.grid-2 .card .grid.grid-2 {
+    gap: 0.5rem;
+  }
+  .section.container .card {
+    margin: 0 1rem;
   }
   .hero {
     min-height: 85vh;
   }
   .hero .inner {
-    padding: 60px 0;
+    padding: 60px 2rem;
   }
   .hero .badge {
     margin-bottom: 2.5rem;
@@ -748,13 +767,19 @@ hr {
     margin: 0 1rem;
   }
   .section.dark .row {
-    margin: 0 1rem;
+    margin: 0 0.1rem;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
+  .section.dark .row .btn.secondary {
+    margin-bottom: 1rem;
+  }
   .section.dark .row h2 {
     margin-bottom: 0;
+  }
+  .section.dark .grid.grid-3 {
+    margin: 0 0.1rem;
   }
   .section.center {
     padding-left: 1rem;
@@ -791,12 +816,19 @@ hr {
     display: block;
   }
   #mobileMenu {
-    margin-top: 0.5rem;
+    position: fixed;
+    top: 80px;
+    left: 1rem;
+    right: 1rem;
+    z-index: 40;
+    margin: 0;
     animation: slideDown 0.3s ease-out;
   }
   #mobileMenu .card {
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: white;
+    border: 1px solid #e5e7eb;
   }
   #mobileMenu a {
     padding: 0.875rem 1rem;
