@@ -647,6 +647,9 @@ hr {
   .section.alt .row:last-child {
     margin-bottom: 2rem;
   }
+  .section.center h2 {
+    font-size: 1.4rem;
+  }
   .hero {
     min-height: 85vh;
   }
@@ -658,11 +661,11 @@ hr {
   }
   .hero h1 {
     margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .hero .lead {
     margin-bottom: 3rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   .hero .cta {
     margin-top: 3rem;
