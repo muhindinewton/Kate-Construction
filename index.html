@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kanana — Building Your Vision</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="dot"></span><span>Kanana</span></a
+        >
+        <nav class="links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn" href="projects.html">View Projects</a>
+        </nav>
+        <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div
+        id="mobileMenu"
+        class="container"
+        style="display: none; padding-bottom: 0.75rem"
+      >
+        <div class="card" style="padding: 0.75rem">
+          <a href="index.html" class="row"><span>Home</span></a>
+          <a href="projects.html" class="row"><span>Projects</span></a>
+          <a href="contact.html" class="row"><span>Contact</span></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container inner">
+        <span class="badge">Design • Build • Manage</span>
+        <h1 class="mt-2">Building Your Vision from the Ground Up</h1>
+        <p class="lead">
+          With decades of experience, we specialize in high‑quality residential
+          and commercial structures that stand the test of time.
+        </p>
+        <div class="cta">
+          <a class="btn" href="projects.html">Explore Projects</a>
+          <a class="btn secondary" href="contact.html">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="grid grid-4">
+        <div class="stat">
+          <span class="big">10+</span><span>Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="big">1500+</span><span>Units Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="big">4.8/5</span><span>Client Rating</span>
+        </div>
+        <div class="stat">
+          <span class="big">98%</span><span>On-time Delivery</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <div class="text-center">
+        <span class="kicker">Services</span>
+        <h2>We Build Everything You Need</h2>
+        <p class="lead">
+          From concept to completion — architecture, planning, construction, and
+          asset management.
+        </p>
+      </div>
+      <div class="grid grid-3 mt-4">
+        <div class="card project-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+            alt="Service"
+          />
+          <div class="content">
+            <h3>Design & Planning</h3>
+            <p>Architectural drawings, permits, budgeting, and timelines.</p>
+          </div>
+        </div>
+        <div class="card project-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+            alt="Service"
+          />
+          <div class="content">
+            <h3>Residential & Mixed-use</h3>
+            <p>Custom homes, apartments, and mixed-use developments.</p>
+          </div>
+        </div>
+        <div class="card project-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+            alt="Service"
+          />
+          <div class="content">
+            <h3>Commercial Construction</h3>
+            <p>Offices, retail spaces, and industrial facilities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <div
+          class="row"
+          style="justify-content: space-between; align-items: center"
+        >
+          <h2>Featured Projects</h2>
+          <a class="btn secondary" href="projects.html">See More</a>
+        </div>
+        <div class="grid grid-3 mt-4">
+          <a href="project.html" class="card dark project-card">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Oakridge Smart Home"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Residential</span><span class="tag">San Diego</span>
+              </div>
+              <h3>Oakridge Smart Home</h3>
+            </div>
+          </a>
+          <a href="project.html" class="card dark project-card">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Elm Street Renovation"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Renovation</span><span class="tag">CA</span>
+              </div>
+              <h3>Elm Street Renovation</h3>
+            </div>
+          </a>
+          <a href="project.html" class="card dark project-card">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Horizon Mall Expansion"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Commercial</span><span class="tag">LA</span>
+              </div>
+              <h3>Horizon Mall Expansion</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="text-center">
+        <span class="kicker">Process</span>
+        <h2>Our Work Process</h2>
+      </div>
+      <div class="steps grid grid-2 mt-4">
+        <div class="step">
+          <div>
+            <h3>Discovery & Planning</h3>
+            <p>Site analysis, requirements gathering, budget, and schedule.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Design & Approvals</h3>
+            <p>Architectural designs, iterations, and permit coordination.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Construction & Oversight</h3>
+            <p>On‑site management, quality control, and stakeholder updates.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Handover & Maintenance</h3>
+            <p>Final inspections, documentation, and ongoing support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container center">
+        <h2>Ready to Build Something Remarkable?</h2>
+        <p class="lead">
+          Let's turn your vision into reality. From concept to delivery, our
+          team is here to help.
+        </p>
+        <a class="btn mt-4" href="contact.html">Start Your Project</a>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container grid">
+        <div>
+          <div class="brand">
+            <span class="dot"></span><span>Kanana</span>
+          </div>
+          <p class="mt-4">Subscribe for updates</p>
+          <form
+            class="row mt-2"
+            onsubmit="event.preventDefault(); alert('Thanks for subscribing!')"
+          >
+            <input
+              type="email"
+              placeholder="Barua pepe"
+              required
+              style="
+                padding: 0.7rem 0.9rem;
+                border: 1px solid #334155;
+                border-radius: 0.6rem;
+                min-width: 220px;
+                background: #0b1220;
+                color: #e2e8f0;
+              "
+            />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <div class="stack mt-2">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <div class="stack mt-2">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <div class="stack mt-2">
+            <a href="contact.html">Get in touch</a>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="container subfooter">
+        © 2025 Kanana. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

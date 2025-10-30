@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Kanana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="dot"></span><span>Kanana</span></a
+        >
+        <nav class="links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn" href="projects.html">View Projects</a>
+        </nav>
+        <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div
+        id="mobileMenu"
+        class="container"
+        style="display: none; padding-bottom: 0.75rem"
+      >
+        <div class="card" style="padding: 0.75rem">
+          <a href="index.html" class="row"><span>Home</span></a>
+          <a href="projects.html" class="row"><span>Projects</span></a>
+          <a href="contact.html" class="row"><span>Contact</span></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section container">
+      <div class="text-center">
+        <h1>Let’s Talk About Your Project</h1>
+        <p class="lead">
+          Whether you’re planning, building, or renovating, we’re here to help.
+        </p>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <span class="badge">Contact Info</span>
+            <h2 class="mt-2">Let’s Work Together</h2>
+            <div class="stack mt-4">
+              <div><strong>Message Us:</strong> hello@bricknet.example</div>
+              <div><strong>Call Us:</strong> (555) 843‑2160</div>
+              <div>
+                <strong>Location:</strong> 47 West Redwood Blvd, San Diego, CA
+              </div>
+              <div>
+                <strong>Hours:</strong> Mon–Fri 8:00–6:00 • Sat 9:00–3:00
+              </div>
+            </div>
+          </div>
+          <form
+            class="card"
+            style="padding: 1rem; background: white; color: #0f172a"
+            onsubmit="event.preventDefault(); alert('Thanks! We will reach out shortly.'); this.reset();"
+          >
+            <h3>Send Us a Message</h3>
+            <div class="grid grid-2 mt-2">
+              <input
+                placeholder="Jina Kamili"
+                required
+                style="
+                  padding: 0.8rem;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 0.6rem;
+                "
+              />
+              <input
+                placeholder="Barua pepe"
+                type="email"
+                required
+                style="
+                  padding: 0.8rem;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 0.6rem;
+                "
+              />
+            </div>
+            <div class="grid grid-2 mt-2">
+              <input
+                placeholder="Namba ya simu"
+                required
+                style="
+                  padding: 0.8rem;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 0.6rem;
+                "
+              />
+              <select
+                required
+                style="
+                  padding: 0.8rem;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 0.6rem;
+                "
+              >
+                <option value="">Project Type</option>
+                <option>Residential</option>
+                <option>Commercial</option>
+                <option>Renovation</option>
+              </select>
+            </div>
+            <textarea
+              placeholder="Ujumbe"
+              rows="5"
+              class="mt-2"
+              style="
+                padding: 0.8rem;
+                border: 1px solid #e5e7eb;
+                border-radius: 0.6rem;
+              "
+            ></textarea>
+            <button class="btn mt-2" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="text-center">
+        <h2>Need Help Before You Build?</h2>
+      </div>
+      <div class="card" style="padding: 1rem">
+        <details open>
+          <summary><strong>What areas do you serve?</strong></summary>
+          <p>
+            Our primary service area is Southern California. For larger or
+            specialized projects, we travel based on scope and timeline.
+          </p>
+        </details>
+        <hr />
+        <details>
+          <summary><strong>Do you offer free consultations?</strong></summary>
+          <p>
+            Yes, we offer a 30‑minute discovery call to discuss goals, budget,
+            and timelines.
+          </p>
+        </details>
+        <hr />
+        <details>
+          <summary><strong>Can you help with permits?</strong></summary>
+          <p>
+            Absolutely. We handle drawings, permit paperwork, and coordination
+            with local authorities.
+          </p>
+        </details>
+        <hr />
+        <details>
+          <summary><strong>Do you work with custom designs?</strong></summary>
+          <p>
+            We provide in‑house design services and collaborate with external
+            architects as needed.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div
+        class="container row"
+        style="justify-content: space-between; align-items: center"
+      >
+        <div>
+          <h2>Find the Right Service for Your Build</h2>
+          <p class="lead">
+            Explore our construction services for new homes, residential, and
+            commercial projects.
+          </p>
+        </div>
+        <a class="btn" href="index.html#services">View Services</a>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container grid">
+        <div>
+          <div class="brand">
+            <span class="dot"></span><span>Kanana</span>
+          </div>
+          <p class="mt-4">Subscribe for updates</p>
+          <form
+            class="row mt-2"
+            onsubmit="event.preventDefault(); alert('Thanks for subscribing!')"
+          >
+            <input
+              type="email"
+              placeholder="Barua pepe"
+              required
+              style="
+                padding: 0.7rem 0.9rem;
+                border: 1px solid #334155;
+                border-radius: 0.6rem;
+                min-width: 220px;
+                background: #0b1220;
+                color: #e2e8f0;
+              "
+            />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <div class="stack mt-2">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <div class="stack mt-2">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <div class="stack mt-2">
+            <a href="contact.html">Get in touch</a>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="container subfooter">
+        © 2025 Kanana. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

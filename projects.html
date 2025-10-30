@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Kanana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="dot"></span><span>Kanana</span></a
+        >
+        <nav class="links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn" href="projects.html">View Projects</a>
+        </nav>
+        <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div
+        id="mobileMenu"
+        class="container"
+        style="display: none; padding-bottom: 0.75rem"
+      >
+        <div class="card" style="padding: 0.75rem">
+          <a href="index.html" class="row"><span>Home</span></a>
+          <a href="projects.html" class="row"><span>Projects</span></a>
+          <a href="contact.html" class="row"><span>Contact</span></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section container">
+      <div class="text-center">
+        <span class="kicker">Projects</span>
+        <h1>Structures That Define Standards</h1>
+        <p class="lead">
+          Explore our portfolio of residential and commercial projects,
+          highlighting quality, precision, and impact.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div
+          class="row"
+          style="justify-content: space-between; align-items: center"
+        >
+          <h2>Featured Projects</h2>
+          <div class="row">
+            <button
+              class="btn secondary active"
+              onclick="filterCategory('all')"
+            >
+              All
+            </button>
+            <button
+              class="btn secondary"
+              onclick="filterCategory('residential')"
+            >
+              Residential
+            </button>
+            <button
+              class="btn secondary"
+              onclick="filterCategory('commercial')"
+            >
+              Commercial
+            </button>
+          </div>
+        </div>
+        <div id="projectGrid" class="grid grid-3 mt-4">
+          <a
+            class="card project-card"
+            data-category="residential"
+            href="project.html"
+          >
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Skyline Residence"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Residential</span><span>San Diego</span>
+              </div>
+              <h3>Skyline Residence</h3>
+            </div>
+          </a>
+          <a
+            class="card project-card"
+            data-category="commercial"
+            href="project.html"
+          >
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Pacific Trade Hub"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Commercial</span><span>San Jose</span>
+              </div>
+              <h3>Pacific Trade Hub</h3>
+            </div>
+          </a>
+          <a
+            class="card project-card"
+            data-category="residential"
+            href="project.html"
+          >
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Meadowview Apartments"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Residential</span><span>CA</span>
+              </div>
+              <h3>Meadowview Apartments</h3>
+            </div>
+          </a>
+          <a
+            class="card project-card"
+            data-category="commercial"
+            href="project.html"
+          >
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Downtown Plaza Upgrade"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Commercial</span><span>Los Angeles</span>
+              </div>
+              <h3>Downtown Plaza Upgrade</h3>
+            </div>
+          </a>
+          <a
+            class="card project-card"
+            data-category="commercial"
+            href="project.html"
+          >
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="GreenTower Offices"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Commercial</span><span>Fremont</span>
+              </div>
+              <h3>GreenTower Offices</h3>
+            </div>
+          </a>
+          <a
+            class="card project-card"
+            data-category="residential"
+            href="project.html"
+          >
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+              alt="Eastpoint Family Home"
+            />
+            <div class="content">
+              <div class="project-meta">
+                <span>Residential</span><span>Orange County</span>
+              </div>
+              <h3>Eastpoint Family Home</h3>
+            </div>
+          </a>
+        </div>
+
+        <div class="center mt-6">
+          <button class="btn secondary" onclick="paginate()">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container center">
+        <h2>Ready to Bring your Project to Life with Confidence?</h2>
+        <a class="btn mt-4" href="contact.html">Start a Conversation</a>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container grid">
+        <div>
+          <div class="brand">
+            <span class="dot"></span><span>Kanana</span>
+          </div>
+          <p class="mt-4">Subscribe for updates</p>
+          <form
+            class="row mt-2"
+            onsubmit="event.preventDefault(); alert('Thanks for subscribing!')"
+          >
+            <input
+              type="email"
+              placeholder="Barua pepe"
+              required
+              style="
+                padding: 0.7rem 0.9rem;
+                border: 1px solid #334155;
+                border-radius: 0.6rem;
+                min-width: 220px;
+                background: #0b1220;
+                color: #e2e8f0;
+              "
+            />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <div class="stack mt-2">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <div class="stack mt-2">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <div class="stack mt-2">
+            <a href="contact.html">Get in touch</a>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="container subfooter">
+        © 2025 Kanana. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

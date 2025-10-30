@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nairobi Smart Home — Kanana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="dot"></span><span>Kanana</span></a
+        >
+        <nav class="links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn" href="projects.html">View Projects</a>
+        </nav>
+        <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div
+        id="mobileMenu"
+        class="container"
+        style="display: none; padding-bottom: 0.75rem"
+      >
+        <div class="card" style="padding: 0.75rem">
+          <a href="index.html" class="row"><span>Home</span></a>
+          <a href="projects.html" class="row"><span>Projects</span></a>
+          <a href="contact.html" class="row"><span>Contact</span></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-slim">
+      <div class="container text-center">
+        <h1>Nairobi Smart Home</h1>
+        <p class="lead">
+          A modern smart-home featuring energy‑efficient systems and seamless
+          living technology.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNDAwJyBoZWlnaHQ9JzYwMCc+CiAgPHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nI2U1ZTdlYicvPgogIDx0ZXh0IHg9JzUwJScgeT0nNTAlJyBkb21pbmFudC1iYXNlbGluZT0nbWlkZGxlJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPScjOWNhM2FmJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtc2l6ZT0nMTQnPlByb2plY3QgQmFubmVyPC90ZXh0Pgo8L3N2Zz4="
+        alt="Nairobi Smart Home wide banner"
+        style="border-radius: 1rem; border: 1px solid #e5e7eb"
+      />
+      <div class="grid grid-3 mt-6">
+        <div class="meta">
+          <strong>Service</strong><span>Residential Construction</span>
+        </div>
+        <div class="meta"><strong>Date</strong><span>June 2025</span></div>
+        <div class="meta">
+          <strong>Location</strong><span>Nairobi, Kenya</span>
+        </div>
+      </div>
+      <div class="grid grid-3 mt-2">
+        <div class="meta">
+          <strong>Client</strong><span>James & Sarah Williams</span>
+        </div>
+        <div class="meta">
+          <strong>Project Value</strong><span>$1.2 Million</span>
+        </div>
+        <div class="meta"><strong>Status</strong><span>Completed</span></div>
+      </div>
+
+      <div class="text-center" style="margin-top: 4rem; margin-bottom: 2rem">
+        <span class="kicker">About Project</span>
+        <h2>Nairobi Smart Home</h2>
+        <p class="lead">
+          Designed around efficiency and comfort with advanced energy systems
+          and sustainable materials.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom: 3rem">
+        <div class="card" style="padding: 2rem">
+          <h3 style="margin-bottom: 1rem; color: var(--ink)">
+            Project Overview
+          </h3>
+          <p style="line-height: 1.7; color: var(--muted)">
+            Nairobi Smart Home is designed around efficiency and comfort.
+            Advanced energy systems, open‑concept living, and sustainable
+            materials deliver a next‑gen dwelling that adapts to its residents.
+          </p>
+          <div class="stack mt-4" style="gap: 0.75rem">
+            <div class="row" style="align-items: center">
+              <span style="color: var(--brand); font-weight: 600">✓</span>
+              <span style="margin-left: 0.5rem">Energy-efficient systems</span>
+            </div>
+            <div class="row" style="align-items: center">
+              <span style="color: var(--brand); font-weight: 600">✓</span>
+              <span style="margin-left: 0.5rem"
+                >Open-concept living spaces</span
+              >
+            </div>
+            <div class="row" style="align-items: center">
+              <span style="color: var(--brand); font-weight: 600">✓</span>
+              <span style="margin-left: 0.5rem">Sustainable materials</span>
+            </div>
+          </div>
+        </div>
+        <div class="card badge-box" style="padding: 2rem">
+          <h3 style="margin-bottom: 1rem; color: var(--ink)">
+            Client Testimonial
+          </h3>
+          <p style="font-style: italic; line-height: 1.6; margin-bottom: 1rem">
+            "Working with Kanana was an outstanding experience. From design to
+            final handover, their attention to detail and communication were
+            superb." — <strong>James Williams</strong>, Homeowner
+          </p>
+          <div class="row" style="align-items: center">
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                background: var(--brand);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: 600;
+                font-size: 1.2rem;
+              "
+            >
+              JW
+            </div>
+            <div style="margin-left: 1rem">
+              <div style="font-weight: 600; color: var(--ink)">
+                James Williams
+              </div>
+              <div style="font-size: 0.875rem; color: var(--muted)">
+                Homeowner
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 5rem; margin-bottom: 2rem">
+        <span class="kicker">Work Process</span>
+        <h2>Our Systematic Approach</h2>
+        <p class="lead">
+          A structured methodology for delivering excellence in every project
+          phase.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom: 3rem">
+        <div class="card" style="padding: 2rem">
+          <h3 style="margin-bottom: 1rem; color: var(--ink)">Planning Phase</h3>
+          <div class="stack" style="gap: 1.5rem">
+            <div class="row" style="align-items: flex-start; gap: 0.75rem">
+              <div
+                style="
+                  width: 32px;
+                  height: 32px;
+                  background: var(--brand);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-weight: 600;
+                  font-size: 0.875rem;
+                  flex-shrink: 0;
+                "
+              >
+                1
+              </div>
+              <div>
+                <h4
+                  style="
+                    margin-bottom: 0.5rem;
+                    color: var(--ink);
+                    font-size: 1rem;
+                  "
+                >
+                  Initial Consultation
+                </h4>
+                <p
+                  style="
+                    margin: 0;
+                    line-height: 1.6;
+                    color: var(--muted);
+                    font-size: 0.875rem;
+                  "
+                >
+                  Goals assessment, constraints analysis, and inspiration
+                  gathering to establish project vision.
+                </p>
+              </div>
+            </div>
+            <div class="row" style="align-items: flex-start; gap: 0.75rem">
+              <div
+                style="
+                  width: 32px;
+                  height: 32px;
+                  background: var(--brand);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-weight: 600;
+                  font-size: 0.875rem;
+                  flex-shrink: 0;
+                "
+              >
+                2
+              </div>
+              <div>
+                <h4
+                  style="
+                    margin-bottom: 0.5rem;
+                    color: var(--ink);
+                    font-size: 1rem;
+                  "
+                >
+                  Permits & Planning
+                </h4>
+                <p
+                  style="
+                    margin: 0;
+                    line-height: 1.6;
+                    color: var(--muted);
+                    font-size: 0.875rem;
+                  "
+                >
+                  Architectural drawings, regulatory approvals, and detailed
+                  project documentation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="padding: 2rem">
+          <h3 style="margin-bottom: 1rem; color: var(--ink)">
+            Execution Phase
+          </h3>
+          <div class="stack" style="gap: 1.5rem">
+            <div class="row" style="align-items: flex-start; gap: 0.75rem">
+              <div
+                style="
+                  width: 32px;
+                  height: 32px;
+                  background: var(--brand);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-weight: 600;
+                  font-size: 0.875rem;
+                  flex-shrink: 0;
+                "
+              >
+                3
+              </div>
+              <div>
+                <h4
+                  style="
+                    margin-bottom: 0.5rem;
+                    color: var(--ink);
+                    font-size: 1rem;
+                  "
+                >
+                  Construction Oversight
+                </h4>
+                <p
+                  style="
+                    margin: 0;
+                    line-height: 1.6;
+                    color: var(--muted);
+                    font-size: 0.875rem;
+                  "
+                >
+                  Quality management, safety protocols, and progress monitoring
+                  throughout construction.
+                </p>
+              </div>
+            </div>
+            <div class="row" style="align-items: flex-start; gap: 0.75rem">
+              <div
+                style="
+                  width: 32px;
+                  height: 32px;
+                  background: var(--brand);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-weight: 600;
+                  font-size: 0.875rem;
+                  flex-shrink: 0;
+                "
+              >
+                4
+              </div>
+              <div>
+                <h4
+                  style="
+                    margin-bottom: 0.5rem;
+                    color: var(--ink);
+                    font-size: 1rem;
+                  "
+                >
+                  Final Handover
+                </h4>
+                <p
+                  style="
+                    margin: 0;
+                    line-height: 1.6;
+                    color: var(--muted);
+                    font-size: 0.875rem;
+                  "
+                >
+                  Smart system walkthrough, comprehensive documentation, and
+                  client training.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 5rem; margin-bottom: 2rem">
+        <span class="kicker">Completed Highlights</span>
+        <h2>Project Gallery</h2>
+        <p class="lead">
+          Explore the finished spaces and thoughtful details of the Nairobi
+          Smart Home.
+        </p>
+      </div>
+      <div class="gallery" style="margin-bottom: 4rem">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <section
+        class="section alt"
+        style="margin-top: 2rem; border-radius: 1rem"
+      >
+        <div class="container">
+          <div class="text-center" style="margin-bottom: 2rem">
+            <h2>Related Projects</h2>
+          </div>
+          <div class="grid grid-3 mt-4">
+            <a class="card project-card" href="project.html#">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+                alt="Skyline Residence"
+              />
+              <div class="content"><h3>Skyline Residence</h3></div>
+            </a>
+            <a class="card project-card" href="project.html#">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+                alt="Elm Street Renovation"
+              />
+              <div class="content"><h3>Elm Street Renovation</h3></div>
+            </a>
+            <a class="card project-card" href="project.html#">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNjAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZTVlN2ViJy8+CiAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGRvbWluYW50LWJhc2VsaW5lPSdtaWRkbGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZpbGw9JyM5Y2EzYWYnIGZvbnQtZmFtaWx5PSdBcmlhbCcgZm9udC1zaXplPScxNCc+UHJvamVjdDwvdGV4dD4KPC9zdmc+"
+                alt="Eastpoint Family Home"
+              />
+              <div class="content"><h3>Eastpoint Family Home</h3></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section dark">
+      <div class="container center">
+        <h2>Let’s Build What’s Next</h2>
+        <p class="lead">
+          Share a few details about your project, and we’ll schedule a
+          consultation.
+        </p>
+        <div class="row" style="justify-content: center; margin-top: 1rem">
+          <a class="btn" href="contact.html">Talk to Us</a>
+          <a class="btn secondary" href="projects.html">See More Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container grid">
+        <div>
+          <div class="brand"><span class="dot"></span><span>Kanana</span></div>
+          <p class="mt-4">Subscribe for updates</p>
+          <form
+            class="row mt-2"
+            onsubmit="event.preventDefault(); alert('Thanks for subscribing!')"
+          >
+            <input
+              type="email"
+              placeholder="Barua pepe"
+              required
+              style="
+                padding: 0.7rem 0.9rem;
+                border: 1px solid #334155;
+                border-radius: 0.6rem;
+                min-width: 220px;
+                background: #0b1220;
+                color: #e2e8f0;
+              "
+            />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <div class="stack mt-2">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <div class="stack mt-2">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <div class="stack mt-2">
+            <a href="contact.html">Get in touch</a>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="container subfooter">© 2025 Kanana. All rights reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
