@@ -718,6 +718,25 @@ hr {
     width: 375px;
     height: 250px;
   }
+  
+  /* Left-align contact info on mobile */
+  .section.dark .grid.grid-2 > div:first-child {
+    text-align: left !important;
+  }
+  
+  .section.dark .grid.grid-2 > div:first-child .badge {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .section.dark .grid.grid-2 > div:first-child h2 {
+    text-align: left;
+  }
+  
+  .section.dark .grid.grid-2 > div:first-child .stack > div {
+    text-align: left;
+    justify-content: flex-start;
+  }
 }
 
 /* Tablet fixed dimensions */
