@@ -176,7 +176,33 @@ h3 {
   font-size: 0.8rem;
 }
 
-/*** Header ***/
+/* Projects page hero section with background image */
+.projects-hero {
+  background: linear-gradient(rgba(11, 19, 36, 0.85), rgba(11, 19, 36, 0.85)), 
+              url('images/projects-background.jpg') center/cover;
+  color: white;
+  padding: 80px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.projects-hero .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects-hero .kicker {
+  color: #ff5a1f;
+}
+
+.projects-hero h1 {
+  color: white;
+}
+
+.projects-hero .lead {
+  color: #cbd5e1;
+}
 header {
   position: sticky;
   top: 0;
