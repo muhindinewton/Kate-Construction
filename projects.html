@@ -3,8 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore Kanana's portfolio of residential and commercial construction projects. Quality, precision, and impact in every structure we build." />
+    <meta name="keywords" content="construction projects, residential projects, commercial buildings, construction portfolio, completed projects" />
+    <meta name="author" content="Kanana Construction" />
+    <meta name="theme-color" content="#ff5a1f" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kanana.construction/projects.html" />
+    <meta property="og:title" content="Projects — Kanana Construction" />
+    <meta property="og:description" content="Structures that define standards. View our portfolio of residential and commercial construction projects." />
+    <meta property="og:image" content="https://kanana.construction/images/projects-background.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kanana.construction/projects.html" />
+    <meta property="twitter:title" content="Projects — Kanana Construction" />
+    <meta property="twitter:description" content="Structures that define standards. View our portfolio of residential and commercial construction projects." />
+    <meta property="twitter:image" content="https://kanana.construction/images/projects-background.jpg" />
+    
     <title>Projects — Kanana</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://kanana.construction/projects.html" />
   </head>
   <body>
     <header>
@@ -14,11 +34,11 @@
         >
         <nav class="links">
           <a href="index.html">Home</a>
+          <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn" href="contact.html">Contact Us</a>
         </nav>
-        <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">
+        <button class="menu-btn" aria-label="Open Menu" aria-expanded="false" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
@@ -31,6 +51,7 @@
       >
         <div class="card" style="padding: 0.75rem">
           <a href="index.html" class="row"><span>Home</span></a>
+          <a href="about.html" class="row"><span>About</span></a>
           <a href="projects.html" class="row"><span>Projects</span></a>
           <a href="contact.html" class="row"><span>Contact</span></a>
         </div>
@@ -61,27 +82,34 @@
             <button
               class="btn secondary active"
               onclick="filterCategory('all')"
+              aria-pressed="true"
+              aria-label="Show all projects"
             >
               All
             </button>
             <button
               class="btn secondary"
               onclick="filterCategory('residential')"
+              aria-pressed="false"
+              aria-label="Show residential projects only"
             >
               Residential
             </button>
             <button
               class="btn secondary"
               onclick="filterCategory('commercial')"
+              aria-pressed="false"
+              aria-label="Show commercial projects only"
             >
               Commercial
             </button>
           </div>
         </div>
-        <div id="projectGrid" class="grid grid-3 mt-4">
+        <div id="projectGrid" class="grid grid-3 mt-4 stagger-animation">
           <a
-            class="card project-card"
+            class="card project-card animate-on-scroll"
             data-category="residential"
+            data-animation="fade-in-up"
             href="project.html"
           >
             <img src="images/house 1.jpg" />
@@ -93,8 +121,9 @@
             </div>
           </a>
           <a
-            class="card project-card"
+            class="card project-card animate-on-scroll"
             data-category="commercial"
+            data-animation="fade-in-up"
             href="project.html"
           >
             <img src="images/house 2.jpg" alt="Elm Street Renovation" />
@@ -106,8 +135,9 @@
             </div>
           </a>
           <a
-            class="card project-card"
+            class="card project-card animate-on-scroll"
             data-category="residential"
+            data-animation="fade-in-up"
             href="project.html"
           >
             <img src="images/house 3.jpg" />
@@ -119,8 +149,9 @@
             </div>
           </a>
           <a
-            class="card project-card"
+            class="card project-card animate-on-scroll"
             data-category="commercial"
+            data-animation="fade-in-up"
             href="project.html"
           >
             <img
@@ -135,8 +166,9 @@
             </div>
           </a>
           <a
-            class="card project-card"
+            class="card project-card animate-on-scroll"
             data-category="commercial"
+            data-animation="fade-in-up"
             href="project.html"
           >
             <img
@@ -151,8 +183,9 @@
             </div>
           </a>
           <a
-            class="card project-card"
+            class="card project-card animate-on-scroll"
             data-category="residential"
+            data-animation="fade-in-up"
             href="project.html"
           >
             <img
@@ -210,6 +243,7 @@
           <h3>Company</h3>
           <div class="stack mt-2">
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
           </div>

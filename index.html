@@ -3,8 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kanana Construction - Building excellence for over a decade. Expert residential and commercial construction services with 1500+ units delivered and 98% on-time delivery rate." />
+    <meta name="keywords" content="construction, residential construction, commercial construction, building services, contractors, San Diego construction, home building" />
+    <meta name="author" content="Kanana Construction" />
+    <meta name="theme-color" content="#ff5a1f" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kanana.construction/" />
+    <meta property="og:title" content="Kanana — Building Your Vision" />
+    <meta property="og:description" content="Expert construction services with decades of experience. From concept to completion, we deliver quality structures that stand the test of time." />
+    <meta property="og:image" content="https://kanana.construction/images/hero.jpeg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kanana.construction/" />
+    <meta property="twitter:title" content="Kanana — Building Your Vision" />
+    <meta property="twitter:description" content="Expert construction services with decades of experience. From concept to completion, we deliver quality structures that stand the test of time." />
+    <meta property="twitter:image" content="https://kanana.construction/images/hero.jpeg" />
+    
     <title>Kanana — Building Your Vision</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://kanana.construction/" />
   </head>
   <body>
     <header>
@@ -14,11 +34,11 @@
         >
         <nav class="links">
           <a href="index.html">Home</a>
+          <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn" href="contact.html">Contact Us</a>
         </nav>
-        <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">
+        <button class="menu-btn" aria-label="Open Menu" aria-expanded="false" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
@@ -31,6 +51,7 @@
       >
         <div class="card" style="padding: 0.75rem">
           <a href="index.html" class="row"><span>Home</span></a>
+          <a href="about.html" class="row"><span>About</span></a>
           <a href="projects.html" class="row"><span>Projects</span></a>
           <a href="contact.html" class="row"><span>Contact</span></a>
         </div>
@@ -53,24 +74,24 @@
     </section>
 
     <section class="section container">
-      <div class="grid grid-4">
-        <div class="stat">
+      <div class="grid grid-4 stagger-animation">
+        <div class="stat animate-on-scroll" data-animation="scale-in">
           <span class="big">10+</span><span>Years Experience</span>
         </div>
-        <div class="stat">
+        <div class="stat animate-on-scroll" data-animation="scale-in">
           <span class="big">1500+</span><span>Units Delivered</span>
         </div>
-        <div class="stat">
+        <div class="stat animate-on-scroll" data-animation="scale-in">
           <span class="big">4.8/5</span><span>Client Rating</span>
         </div>
-        <div class="stat">
+        <div class="stat animate-on-scroll" data-animation="scale-in">
           <span class="big">98%</span><span>On-time Delivery</span>
         </div>
       </div>
     </section>
 
     <section id="services" class="section container">
-      <div class="text-center">
+      <div class="text-center animate-on-scroll" data-animation="fade-in">
         <span class="kicker">Services</span>
         <h2>We Build Everything You Need</h2>
         <p class="lead">
@@ -78,22 +99,22 @@
           asset management.
         </p>
       </div>
-      <div class="grid grid-3 mt-4">
-        <div class="card project-card">
+      <div class="grid grid-3 mt-4 stagger-animation">
+        <div class="card project-card animate-on-scroll" data-animation="fade-in-up">
           <img src="images/Structural drawings.jpg" alt="Service" />
           <div class="content">
             <h3>Design & Planning</h3>
             <p>Architectural drawings, permits, budgeting, and timelines.</p>
           </div>
         </div>
-        <div class="card project-card">
+        <div class="card project-card animate-on-scroll" data-animation="fade-in-up">
           <img src="images/site-supervision.jpg" alt="Service" />
           <div class="content">
             <h3>Site Supervision</h3>
             <p>On-site supervision and quality control.</p>
           </div>
         </div>
-        <div class="card project-card">
+        <div class="card project-card animate-on-scroll" data-animation="fade-in-up">
           <img src="images/interir design.png" alt="Service" />
           <div class="content">
             <h3>Interior Design</h3>
@@ -112,8 +133,8 @@
           <h2>Featured Projects</h2>
           <a class="btn secondary" href="projects.html">See More</a>
         </div>
-        <div class="grid grid-3 mt-4">
-          <a href="project.html" class="card dark project-card">
+        <div class="grid grid-3 mt-4 stagger-animation">
+          <a href="project.html" class="card dark project-card animate-on-scroll" data-animation="fade-in-up">
             <img src="images/house 1.jpg" />
             <div class="content">
               <div class="project-meta">
@@ -122,7 +143,7 @@
               <h3>Oakridge Smart Home</h3>
             </div>
           </a>
-          <a href="project.html" class="card dark project-card">
+          <a href="project.html" class="card dark project-card animate-on-scroll" data-animation="fade-in-up">
             <img src="images/house 2.jpg" alt="Elm Street Renovation" />
             <div class="content">
               <div class="project-meta">
@@ -131,7 +152,7 @@
               <h3>Elm Street Renovation</h3>
             </div>
           </a>
-          <a href="project.html" class="card dark project-card">
+          <a href="project.html" class="card dark project-card animate-on-scroll" data-animation="fade-in-up">
             <img src="images/house 3.jpg" />
             <div class="content">
               <div class="project-meta">
@@ -145,30 +166,30 @@
     </section>
 
     <section class="section container">
-      <div class="text-center">
+      <div class="text-center animate-on-scroll" data-animation="fade-in">
         <span class="kicker">Process</span>
         <h2>Our Work Process</h2>
       </div>
-      <div class="steps grid grid-2 mt-4">
-        <div class="step">
+      <div class="steps grid grid-2 mt-4 stagger-animation">
+        <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>Discovery & Planning</h3>
             <p>Site analysis, requirements gathering, budget, and schedule.</p>
           </div>
         </div>
-        <div class="step">
+        <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>Design & Approvals</h3>
             <p>Architectural designs, iterations, and permit coordination.</p>
           </div>
         </div>
-        <div class="step">
+        <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>Construction & Oversight</h3>
             <p>On‑site management, quality control, and stakeholder updates.</p>
           </div>
         </div>
-        <div class="step">
+        <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>Handover & Maintenance</h3>
             <p>Final inspections, documentation, and ongoing support.</p>
@@ -217,6 +238,7 @@
           <h3>Company</h3>
           <div class="stack mt-2">
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
           </div>
