@@ -64,9 +64,34 @@ function filterCategory(cat) {
     event.target.setAttribute('aria-pressed', 'true');
   }
   
+  // Check pagination visibility after filtering
+  checkPaginationVisibility();
+  
   // Announce to screen readers
   const announcement = `Showing ${visibleCount} ${cat === 'all' ? '' : cat} projects`;
   announceToScreenReader(announcement);
+}
+
+/**
+ * Checks if Load More button should be displayed
+ * Shows button only when there are more than 6 projects
+ */
+function checkPaginationVisibility() {
+  const grid = document.getElementById("projectGrid");
+  const loadMoreContainer = document.getElementById("loadMoreContainer");
+  
+  if (!grid || !loadMoreContainer) {
+    return;
+  }
+  
+  const totalProjects = grid.querySelectorAll('.project-card').length;
+  
+  // Show Load More button only if there are more than 6 projects
+  if (totalProjects > 6) {
+    loadMoreContainer.style.display = 'block';
+  } else {
+    loadMoreContainer.style.display = 'none';
+  }
 }
 
 /**
@@ -82,7 +107,7 @@ function paginate() {
   }
   
   const categories = ['residential', 'commercial'];
-  const locations = ['CA', 'San Diego', 'Los Angeles', 'San Jose'];
+  const locations = ['Nairobi', 'Kiambu', 'Mombasa', 'Nakuru'];
   
   for (let i = 0; i < 3; i++) {
     const category = categories[i % 2];
@@ -106,6 +131,9 @@ function paginate() {
     
     grid.appendChild(a);
   }
+  
+  // Check if we need to hide the button after loading more
+  checkPaginationVisibility();
   
   // Announce to screen readers
   announceToScreenReader('3 more projects loaded');
@@ -182,6 +210,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize scroll animations
   initScrollAnimations();
+  
+  // Check pagination visibility on page load
+  checkPaginationVisibility();
   
   // Close mobile menu when clicking outside
   document.addEventListener('click', function(e) {
