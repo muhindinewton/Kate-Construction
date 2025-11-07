@@ -17,7 +17,10 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://authenticcompanies.com/" />
-    <meta property="og:title" content="Authentic Construction and Interiors — Rooted in Authenticity, Inspired by You" />
+    <meta
+      property="og:title"
+      content="Authentic Construction and Interiors — Rooted in Authenticity, Inspired by You"
+    />
     <meta
       property="og:description"
       content="Comprehensive construction and interior design solutions. We transform visions into timeless spaces with authenticity, innovation, and sustainable practices."
@@ -30,7 +33,10 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://authenticcompanies.com/" />
-    <meta property="twitter:title" content="Authentic Construction and Interiors — Rooted in Authenticity, Inspired by You" />
+    <meta
+      property="twitter:title"
+      content="Authentic Construction and Interiors — Rooted in Authenticity, Inspired by You"
+    />
     <meta
       property="twitter:description"
       content="Comprehensive construction and interior design solutions. We transform visions into timeless spaces with authenticity, innovation, and sustainable practices."
@@ -40,7 +46,10 @@
       content="https://authenticcompanies.com/images/hero.jpeg"
     />
 
-    <title>Authentic Construction and Interiors — Rooted in Authenticity, Inspired by You</title>
+    <title>
+      Authentic Construction and Interiors — Rooted in Authenticity, Inspired by
+      You
+    </title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="canonical" href="https://authenticcompanies.com/" />
   </head>
@@ -88,7 +97,9 @@
         <span class="badge">Design • Build • Manage</span>
         <h1 class="mt-2">Rooted in Authenticity, Inspired by You</h1>
         <p class="lead">
-          We transform visions into timeless spaces. Comprehensive construction and interior design solutions that deliver both beauty and functionality.
+          We transform visions into timeless spaces. Comprehensive construction
+          and interior design solutions that deliver both beauty and
+          functionality.
         </p>
         <div class="cta">
           <a class="btn" href="projects.html">Explore Projects</a>
@@ -119,232 +130,101 @@
         <span class="kicker">Services</span>
         <h2>Comprehensive Solutions for Every Space</h2>
         <p class="lead">
-          From construction and renovation to interior design and styling — we provide end-to-end solutions for residential and commercial spaces.
+          From construction and renovation to interior design and styling — we
+          provide end-to-end solutions for residential and commercial spaces.
         </p>
       </div>
 
-      <!-- Services Carousel -->
-      <div style="position: relative; margin-top: 3rem;">
-        <div id="servicesCarousel" style="overflow: hidden; padding: 0 60px;">
-          <div id="servicesCarouselTrack" style="display: flex; transition: transform 0.5s ease; gap: 1.5rem;">
-            
-            <!-- Service 1 -->
-            <div class="service-slide" style="flex: 0 0 calc(33.33% - 1rem); min-width: 280px;">
-              <div class="card project-card">
-                <img src="images/Structural drawings.jpg" alt="Construction & Renovation" />
-                <div class="content">
-                  <h3>Construction & Renovation</h3>
-                  <p>Whether building from the ground up or breathing new life into existing spaces, we deliver high-quality construction and renovation services with structural integrity and superior finishes.</p>
-                </div>
-              </div>
+      <!-- Services Grid -->
+      <div class="grid grid-3 mt-4 stagger-animation">
+        <!-- Service 1 -->
+        <div class="animate-on-scroll" data-animation="fade-in-up">
+          <div class="card project-card">
+            <img
+              src="images/Structural drawings.jpg"
+              alt="Construction & Renovation"
+            />
+            <div class="content">
+              <h3>Construction & Renovation</h3>
+              <p>
+                Whether building from the ground up or breathing new life
+                into existing spaces, we deliver high-quality construction
+                and renovation services with structural integrity and
+                superior finishes.
+              </p>
             </div>
-
-            <!-- Service 2 -->
-            <div class="service-slide" style="flex: 0 0 calc(33.33% - 1rem); min-width: 280px;">
-              <div class="card project-card">
-                <img src="images/interir design.png" alt="Interior Design & Styling" />
-                <div class="content">
-                  <h3>Interior Design & Styling</h3>
-                  <p>We curate interiors that reflect your personality and lifestyle. From space planning and concept design to FF&E selection, color schemes, and décor styling.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-slide" style="flex: 0 0 calc(33.33% - 1rem); min-width: 280px;">
-              <div class="card project-card">
-                <img src="images/site-supervision.jpg" alt="Project Management" />
-                <div class="content">
-                  <h3>Project Management</h3>
-                  <p>We take the stress off your shoulders by managing every aspect of your project from budgeting and scheduling to quality control and contractor coordination.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-slide" style="flex: 0 0 calc(33.33% - 1rem); min-width: 280px;">
-              <div class="card project-card">
-                <img src="images/house 1.jpg" alt="Design-Build Solutions" />
-                <div class="content">
-                  <h3>Design-Build Solutions</h3>
-                  <p>For clients seeking efficiency, our design-build service offers a one-stop solution. We handle both design and construction, ensuring seamless collaboration and faster timelines.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-slide" style="flex: 0 0 calc(33.33% - 1rem); min-width: 280px;">
-              <div class="card project-card">
-                <img src="images/kitchen.jpeg" alt="Consultancy Services" />
-                <div class="content">
-                  <h3>Consultancy Services</h3>
-                  <p>Not ready to start building yet? Our consultancy service provides expert advice with site visits, feasibility studies, and technical guidance on approvals and compliance.</p>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
 
-        <!-- Navigation Buttons -->
-        <button onclick="moveServicesCarousel(1)" style="
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          background: var(--primary);
-          border: none;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          color: white;
-          font-size: 1.5rem;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-          z-index: 10;
-        " onmouseover="this.style.background='#ff7a3f'" onmouseout="this.style.background='var(--primary)'">
-          ‹
-        </button>
-        
-        <button onclick="moveServicesCarousel(-1)" style="
-          position: absolute;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          background: var(--primary);
-          border: none;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          color: white;
-          font-size: 1.5rem;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-          z-index: 10;
-        " onmouseover="this.style.background='#ff7a3f'" onmouseout="this.style.background='var(--primary)'">
-          ›
-        </button>
+        <!-- Service 2 -->
+        <div class="animate-on-scroll" data-animation="fade-in-up">
+          <div class="card project-card">
+            <img
+              src="images/interir design.png"
+              alt="Interior Design & Styling"
+            />
+            <div class="content">
+              <h3>Interior Design & Styling</h3>
+              <p>
+                We curate interiors that reflect your personality and
+                lifestyle. From space planning and concept design to FF&E
+                selection, color schemes, and décor styling.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <!-- Carousel Indicators -->
-        <div id="servicesCarouselIndicators" style="display: flex; justify-content: center; gap: 10px; margin-top: 2rem;">
-          <!-- Indicators will be dynamically created by JavaScript -->
+        <!-- Service 3 -->
+        <div class="animate-on-scroll" data-animation="fade-in-up">
+          <div class="card project-card">
+            <img
+              src="images/site-supervision.jpg"
+              alt="Project Management"
+            />
+            <div class="content">
+              <h3>Project Management</h3>
+              <p>
+                We take the stress off your shoulders by managing every
+                aspect of your project from budgeting and scheduling to
+                quality control and contractor coordination.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="animate-on-scroll" data-animation="fade-in-up">
+          <div class="card project-card">
+            <img src="images/house 1.jpg" alt="Design-Build Solutions" />
+            <div class="content">
+              <h3>Design-Build Solutions</h3>
+              <p>
+                For clients seeking efficiency, our design-build service
+                offers a one-stop solution. We handle both design and
+                construction, ensuring seamless collaboration and faster
+                timelines.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="animate-on-scroll" data-animation="fade-in-up">
+          <div class="card project-card">
+            <img src="images/kitchen.jpeg" alt="Consultancy Services" />
+            <div class="content">
+              <h3>Consultancy Services</h3>
+              <p>
+                Not ready to start building yet? Our consultancy service
+                provides expert advice with site visits, feasibility
+                studies, and technical guidance on approvals and compliance.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Services Carousel Script -->
-    <script>
-      let currentServiceSlide = 0;
-      const serviceSlides = document.querySelectorAll('.service-slide');
-      const totalServiceSlides = serviceSlides.length;
-      let servicesAutoSlideInterval;
-      
-      function getServicesSlidesPerView() {
-        if (window.innerWidth >= 1024) return 3; // Desktop: 3 slides
-        if (window.innerWidth >= 768) return 2;  // Tablet: 2 slides
-        return 1; // Mobile: 1 slide
-      }
-      
-      function getServicesMaxSlide() {
-        const slidesPerView = getServicesSlidesPerView();
-        return Math.max(0, totalServiceSlides - slidesPerView);
-      }
-      
-      function getServicesPageCount() {
-        const slidesPerView = getServicesSlidesPerView();
-        return Math.ceil(totalServiceSlides / slidesPerView);
-      }
-      
-      function createServicesIndicators() {
-        const indicatorsContainer = document.getElementById('servicesCarouselIndicators');
-        indicatorsContainer.innerHTML = '';
-        const pageCount = getServicesPageCount();
-        
-        for (let i = 0; i < pageCount; i++) {
-          const dot = document.createElement('button');
-          dot.className = 'services-carousel-dot';
-          dot.style.cssText = 'width: 12px; height: 12px; border-radius: 50%; border: none; background: #666; cursor: pointer; transition: all 0.3s;';
-          dot.onclick = () => goToServicesPage(i);
-          indicatorsContainer.appendChild(dot);
-        }
-      }
-      
-      function goToServicesPage(pageIndex) {
-        const slidesPerView = getServicesSlidesPerView();
-        currentServiceSlide = pageIndex * slidesPerView;
-        const maxSlide = getServicesMaxSlide();
-        if (currentServiceSlide > maxSlide) currentServiceSlide = maxSlide;
-        updateServicesCarousel();
-      }
-
-      function moveServicesCarousel(direction) {
-        const slidesPerView = getServicesSlidesPerView();
-        const maxSlide = getServicesMaxSlide();
-        
-        currentServiceSlide += direction * slidesPerView;
-        
-        // Loop around when reaching boundaries
-        if (currentServiceSlide > maxSlide) {
-          currentServiceSlide = 0;
-        } else if (currentServiceSlide < 0) {
-          currentServiceSlide = maxSlide;
-        }
-        
-        updateServicesCarousel();
-      }
-
-      function updateServicesCarousel() {
-        const track = document.getElementById('servicesCarouselTrack');
-        const slideWidth = serviceSlides[0].offsetWidth;
-        const gap = 24; // 1.5rem gap
-        const offset = currentServiceSlide * (slideWidth + gap);
-        track.style.transform = `translateX(-${offset}px)`;
-        
-        // Update indicators based on current page
-        const dots = document.querySelectorAll('.services-carousel-dot');
-        const slidesPerView = getServicesSlidesPerView();
-        const currentPage = Math.floor(currentServiceSlide / slidesPerView);
-        
-        dots.forEach((dot, index) => {
-          if (index === currentPage) {
-            dot.style.background = 'var(--primary)';
-            dot.style.transform = 'scale(1.2)';
-            dot.classList.add('active');
-          } else {
-            dot.style.background = '#666';
-            dot.style.transform = 'scale(1)';
-            dot.classList.remove('active');
-          }
-        });
-      }
-      
-      function startServicesAutoSlide() {
-        if (servicesAutoSlideInterval) clearInterval(servicesAutoSlideInterval);
-        servicesAutoSlideInterval = setInterval(() => {
-          moveServicesCarousel(1);
-        }, 5000);
-      }
-      
-      // Update on window resize
-      window.addEventListener('resize', () => {
-        createServicesIndicators();
-        currentServiceSlide = 0; // Reset to first slide on resize
-        updateServicesCarousel();
-      });
-      
-      // Initialize
-      createServicesIndicators();
-      updateServicesCarousel();
-      startServicesAutoSlide();
-    </script>
 
     <section class="section dark">
       <div class="container">
@@ -404,53 +284,90 @@
         <span class="kicker">The Process</span>
         <h2>How We Work</h2>
         <p class="lead">
-          At Authentic Construction & Interiors, we believe in making every project seamless,
-          transparent, and client-focused. Whether we're with you from the beginning or stepping
-          in along the way, our goal is the same: to deliver an authentic space that reflects your
-          vision.
+          At Authentic Construction & Interiors, we believe in making every
+          project seamless, transparent, and client-focused. Whether we're with
+          you from the beginning or stepping in along the way, our goal is the
+          same: to deliver an authentic space that reflects your vision.
         </p>
       </div>
       <div class="steps grid grid-2 mt-4 stagger-animation">
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>01. Discovery & Consultation</h3>
-            <p>We start with a conversation to understand your needs, goals, style, and budget. This is where we align on your vision and how we can bring it to life. If we're joining mid-project, we review the progress made so far (drawings, contractor work, permits, or existing structures) to identify what's working and where we can add value.</p>
+            <p>
+              We start with a conversation to understand your needs, goals,
+              style, and budget. This is where we align on your vision and how
+              we can bring it to life. If we're joining mid-project, we review
+              the progress made so far (drawings, contractor work, permits, or
+              existing structures) to identify what's working and where we can
+              add value.
+            </p>
           </div>
         </div>
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>02. Site Visit & Assessment</h3>
-            <p>Our team visits your space to evaluate site conditions, measurements, and opportunities. This ensures we have accurate insights before design or construction decisions are made. For ongoing projects, we assess the site's current stage, check quality of work already done, and map out the next steps to smoothly continue without disruption.</p>
+            <p>
+              Our team visits your space to evaluate site conditions,
+              measurements, and opportunities. This ensures we have accurate
+              insights before design or construction decisions are made. For
+              ongoing projects, we assess the site's current stage, check
+              quality of work already done, and map out the next steps to
+              smoothly continue without disruption.
+            </p>
           </div>
         </div>
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>03. Design & Planning</h3>
-            <p>We translate your ideas into practical, beautiful solutions through drawings, layouts, 3D visuals, and material selections. Together, we finalize a design that balances function and aesthetics. If designs already exist, we refine, adjust, or enhance them to align with your style, ensuring consistency and quality throughout.</p>
+            <p>
+              We translate your ideas into practical, beautiful solutions
+              through drawings, layouts, 3D visuals, and material selections.
+              Together, we finalize a design that balances function and
+              aesthetics. If designs already exist, we refine, adjust, or
+              enhance them to align with your style, ensuring consistency and
+              quality throughout.
+            </p>
           </div>
         </div>
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>04. Budgeting & Scheduling</h3>
-            <p>We provide clear cost breakdowns and timelines, ensuring transparency and helping you make informed decisions.</p>
+            <p>
+              We provide clear cost breakdowns and timelines, ensuring
+              transparency and helping you make informed decisions.
+            </p>
           </div>
         </div>
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>05. Execution</h3>
-            <p>Our skilled team manages every detail—from foundation to finishes, or from remodeling to final touches. Quality control is at the heart of every step. If construction has started, we step in to manage or complement ongoing work, ensuring it meets professional standards and aligns with your design vision.</p>
+            <p>
+              Our skilled team manages every detail—from foundation to finishes,
+              or from remodeling to final touches. Quality control is at the
+              heart of every step. If construction has started, we step in to
+              manage or complement ongoing work, ensuring it meets professional
+              standards and aligns with your design vision.
+            </p>
           </div>
         </div>
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>06. Interior Fit-outs & Styling</h3>
-            <p>We bring in furniture, fixtures, finishes, and décor to complete your space—making it functional, authentic, and inspiring.</p>
+            <p>
+              We bring in furniture, fixtures, finishes, and décor to complete
+              your space—making it functional, authentic, and inspiring.
+            </p>
           </div>
         </div>
         <div class="step animate-on-scroll" data-animation="slide-in-left">
           <div>
             <h3>07. Handover & Aftercare</h3>
-            <p>We conduct a final walkthrough with you, resolve any snags, and officially hand over your space. Even after project completion, we remain available for support.</p>
+            <p>
+              We conduct a final walkthrough with you, resolve any snags, and
+              officially hand over your space. Even after project completion, we
+              remain available for support.
+            </p>
           </div>
         </div>
       </div>
@@ -460,7 +377,8 @@
       <div class="container center">
         <h2>Ready to Transform Your Space?</h2>
         <p class="lead">
-          Whether building from scratch or upgrading your space, we handle it all under one roof. Let's bring your vision to life.
+          Whether building from scratch or upgrading your space, we handle it
+          all under one roof. Let's bring your vision to life.
         </p>
         <a class="btn mt-4" href="contact.html">Get Started</a>
       </div>
@@ -469,7 +387,9 @@
     <footer class="section">
       <div class="container grid">
         <div>
-          <div class="brand"><span class="dot"></span><span>Authentic</span></div>
+          <div class="brand">
+            <span class="dot"></span><span>Authentic</span>
+          </div>
           <p class="mt-4">Subscribe for updates</p>
           <form
             class="row mt-2"
@@ -504,9 +424,10 @@
         <div>
           <h3>Social</h3>
           <div class="stack mt-2">
-            <a href="https://instagram.com/authenticinteriors" target="_blank">Instagram</a>
-            <a href="https://instagram.com/authentic_interiors_kenya" target="_blank">@Authentic Interiors Kenya</a>
-            <a href="mailto:authenticcompanies@gmail.com">Email</a>
+            <a href="https://instagram.com/authenticinteriors" target="_blank"
+              >Instagram</a
+            >
+                        <a href="mailto:authenticcompanies@gmail.com">Email</a>
           </div>
         </div>
         <div>
@@ -518,46 +439,66 @@
           </div>
         </div>
       </div>
-      <div class="container subfooter">© 2025 Authentic Construction and Interiors. All rights reserved.</div>
+      <div class="container subfooter">
+        © 2025 Authentic Construction and Interiors. All rights reserved.
+      </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/254758405988" target="_blank" class="whatsapp-float" style="
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 30px;
-      right: 30px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" style="margin-top: -2px;">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-      </svg>
-      <span style="
-        position: absolute;
-        right: 70px;
-        background-color: #333;
+    <a
+      href="https://wa.me/254758405988"
+      target="_blank"
+      class="whatsapp-float"
+      style="
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
         color: white;
-        padding: 8px 12px;
-        border-radius: 6px;
-        font-size: 14px;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: all 0.3s ease;
-        font-family: inherit;
-      ">WhatsApp Us</span>
+        text-decoration: none;
+      "
+      onmouseover="this.style.transform='scale(1.1)'"
+      onmouseout="this.style.transform='scale(1)'"
+    >
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        style="margin-top: -2px"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+      <span
+        style="
+          position: absolute;
+          right: 70px;
+          background-color: #333;
+          color: white;
+          padding: 8px 12px;
+          border-radius: 6px;
+          font-size: 14px;
+          white-space: nowrap;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+          font-family: inherit;
+        "
+        >WhatsApp Us</span
+      >
     </a>
 
     <style>
